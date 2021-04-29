@@ -1,7 +1,7 @@
 # The Wallet App
 
 This project will help you practice most of the knowledge you've learned so far in JavaScript.
-
+ 
 
 You are required to create this using OOP and only use Vanilla JS (HTML, CSS, JS).
 
@@ -25,7 +25,7 @@ No Wallet View
 Create Wallet Form
 ![Create Wallet Form](https://github.com/ReCoded-Org/iq-bootcamp-wallet-project-students/blob/master/mockups/create-wallet-form.jpg?raw=true)
 
-
+ 
 ## Classes
 Every object in this app should be a class. For instance:
 - Wallet

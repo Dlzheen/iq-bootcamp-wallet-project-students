@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal
+        {
+            border: 1px solid black;
+            margin: auto;
+            width: 60%;
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>Wallet app</nav>
+    <div>
+        <h2>Ooops</h2>
+        <p>You have no Wallets, start by creating one</p>
+        <button id="create-wallet">Create Wallet</button>
+    </div>
+
+    <div id="modal" >
+        <h2 id="modal-h2">Create new wallet <button class="cancel-modal-btn">x</button></h2>
+        <form id="modal-form">
+             <label for="modal-name">name</label>
+             <br>
+             <input type="text" id="modal-name">
+             <br>
+             <span>Currency</span><br>
+             <input type="radio" name="currency1" id="currency1">
+             <label for="currency1">US Dollars ($)</label>
+             
+             <input type="radio" name="currency1" id="currency2">
+             <label for="currency2">Iraqi Dinars (IQD)</label>
+             <br>
+             <label for="modal-balance">Balance</label>
+             <input type="text" id="modal-balance">
+             <br>
+             <label for="modal-describe">Describtion</label>
+             <input type="text" id="modal-describe">
+             <br>
+            <button class="cancel-modal-btn" >Close</button>
+            <button id="create-wallet-btn"><a href="wallet.html">Create a wallet</a> </button>
+        </form>
+        
+</div>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
