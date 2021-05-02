@@ -1,0 +1,144 @@
+.index-div{
+    width: 30%;
+    margin-left:410px ;
+}
+.index-div img{
+    height: 300px;
+    width: 300px;
+    margin-left: 50px;
+}
+.index-div h2,p{
+  text-align: center;
+}
+.index-div button{
+  margin-left: 150px;
+  background-color: #008080;
+  padding: 10px;
+  border-radius: 10%;
+  color: white;
+}
+.navbar{
+    background-color: lightgray;
+    padding: 5px;
+}
+.modal-container{
+    border: 1px solid lightgray;
+     margin: auto;
+     width: 30%;
+     padding: 20px;
+     display: none;
+     flex-direction: column;
+    background-color: whitesmoke;
+}
+.modal-container h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.modal-form button{
+    background-color: #008080;
+    color: white;
+    border-radius: 6px;
+    width: 80%;
+    margin: auto;
+    padding: 8px;
+}
+.modal-form input{
+   
+  margin-left: 20px ;  
+}
+.modal-input{
+    width: 80%;
+    margin: 10px;
+    padding: 5px;
+}
+.modal-form-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+a{
+ text-decoration: none;
+  color: black;
+ }
+#wallet-div{
+    display: none;
+    width: 100%;
+   height: 1000px;
+   margin: 0px;
+ background-color: beige;
+
+ }
+ .wallet-div-div{
+  width: 60%;
+  margin: auto; 
+  display: flex;
+  flex-direction: column;    
+}
+.wallet-div-div div{
+    
+   margin: 5px;
+}
+.wallet-div-div input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid gray;
+}
+.wallet-div-div input:hover{
+    border:1px solid black;
+}
+.wallet-div-div button{
+    margin: 5px;;
+    width: 150px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+#income-btn
+{
+    border: 1px solid green;
+}
+#income-btn:hover{
+background-color: green;
+}
+#expence-btn
+{
+    border: 1px solid red;
+}
+#expence-btn:hover{
+    background-color: red;
+}
+#trans-btn
+{
+    background-color: lightgray;
+}
+#trans-btn:hover{
+   background-color: gray;
+}
+.create-wallet-btn3{
+background-color: #008080;
+height: 30px;
+border-radius: 8px;
+color: white;    
+}
+ #list-of-wallets
+{
+  display: none;
+  width: 100%;
+  height: 1000px;
+}
+#list-of-wallets div{
+ display: flex;
+ flex-direction: row;    
+}
+#list-of-wallets-ul
+{
+    flex-direction: row;
+}

@@ -5,55 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        #modal
-        {
-            border: 1px solid black;
-            margin: auto;
-            width: 60%;
-            display: none;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>Wallet app</nav>
-    <div>
-        <h2>Ooops</h2>
+    <nav class="navbar">
+       <h3>Wallet app</h3>
+    </nav>
+    <div id="list-of-wallets">
+        <div>
+        <button id="create-wallet-btn3" class="create-wallet-btn3">create another wallet</button>
+        <ul id="list-of-wallets-ul">
+        </ul>
+       </div>
+    </div>
+    <div id="wallet-div">
+       <div class="wallet-div-div">
+        <h2> Wallet </h2>
+        <h3> Wallet Balance </h3>
+        <span>Make a transaction:</span>
+       <div>
+        <input type="text" id="user-balance-input" style="margin-right: 0px;">
+        <button id="user-balance-btn" style="margin-left: 0px;background-color: lightgray;"> balance</button>
+        <button id="income-btn">income</button><button id="expence-btn">expence</button>
+       </div>
+        <div >
+            <label for="trans-notes" style="margin-right: 30px;">Transaction Notes:</label>
+           <label for="trans-tags" style="margin-left: 30px;">Transaction Tags:   </label>
+        </div>
+       <div >
+        <input type="text"  id="trans-notes">
+         <input type="text"  id="trans-tags">
+         <button id="trans-btn" style="width: 300px;">Add Transactions </button>
+       </div>
+       <ul id="transaction-list"></ul>
+       </div>
+    </div>
+    <div id="index-div" class="index-div">
+        <img src="images/1.jpg" >
+        <h2>Ooops!</h2>
         <p>You have no Wallets, start by creating one</p>
         <button id="create-wallet">Create Wallet</button>
     </div>
-
-    <div id="modal" >
-        <h2 id="modal-h2">Create new wallet <button class="cancel-modal-btn">x</button></h2>
-        <form id="modal-form">
-             <label for="modal-name">name</label>
-             <br>
-             <input type="text" id="modal-name">
-             <br>
-             <span>Currency</span><br>
-             <input type="radio" name="currency1" id="currency1">
-             <label for="currency1">US Dollars ($)</label>
-             
-             <input type="radio" name="currency1" id="currency2">
-             <label for="currency2">Iraqi Dinars (IQD)</label>
-             <br>
-             <label for="modal-balance">Balance</label>
-             <input type="text" id="modal-balance">
-             <br>
-             <label for="modal-describe">Describtion</label>
-             <input type="text" id="modal-describe">
-             <br>
-            <button class="cancel-modal-btn" >Close</button>
-            <button id="create-wallet-btn"><a href="wallet.html">Create a wallet</a> </button>
-        </form>
-        
-</div>
-    
-
-    <script src="scripts.js"></script>
+    <div id="modal" class="modal-container">
+        <h2 id="modal-h2">Create new wallet <button id="cancel-modal-btn">x</button></h2>
+        <form id="modal-form" class="modal-form">
+            <div class="modal-form-div">
+                <label for="modal-name">Name</label>
+                <input type="text" id="modal-name" style="margin-left: 37px;" class="modal-input">
+            </div>
+             <div class="modal-form-div">
+                <span>Currency</span><br>
+                <div class="modal-div">
+                    <div><input type="radio" name="currency1" value= "$" id="currency1">
+                        <label for="currency1">US Dollars ($)</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="currency1" value= "IQD"  id="currency2">
+                    <label for="currency2">Iraqi Dinars (IQD)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-form-div">
+                <label for="modal-balance">Balance</label>
+                <input type="text" id="modal-balance" style="margin-left: 27px;" class="modal-input">
+            </div> 
+            <div class="modal-form-div">
+                <label for="modal-describe">Describtion</label>
+                <input type="text" id="modal-describe" style="margin-left:4px;" class="modal-input">
+            </div>
+            <div class="modal-form-div">
+                <button id="create-wallet-btn" type="submit">Create a wallet </button>
+            </div>
+            </form>
+        </div>
+<script src="scripts.js"></script>
 </body>
 </html>

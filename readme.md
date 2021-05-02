@@ -41,8 +41,8 @@ Listeners and UI updating methods can sit outside of the classes.
 ___
 
 Please list the team member names below:
-- Team member 1
-- Team member 2
+- Dlzheen
+- Zhino
 
 <br>
 Happy Coding! ❤
